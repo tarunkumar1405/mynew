@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IDIOMS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #myInput {
+        background-image: url("icons8-search-24.png");
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+      }
+
+      #myTable th,
+      #myTable td {
+        text-align: left;
+        padding: 12px;
+      }
+
+      #myTable tr {
+        border-bottom: 1px solid #ddd;
+      }
+
+      #myTable tr.header,
+      #myTable tr:hover {
+        background-color: #f1f1f1;
+      }
+      
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .previous {
+        background-color: #04aa6d;
+        color: black;
+      }
+      body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="previous">&laquo; Previous</a>
+    <button onclick="myFunction()">Dark Mode</button>
+    <h1>IDIOMS AND PHRASES</h1>
+
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Type in English";
+      title="Type in a name"
+    />
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width: 30%">IDIOMS & PHRASES</th>
+        <th style="width: 40%">MEANING</th>
+        <th style="width: 800%">EXAMPLE</th>
+      </tr>
+
+      <tr>
+        <td>A gentleman at large</td>
+        <td>An unreliable person</td>
+        <td>He is a gentleman at large, you must not trust him.</td>
+      </tr>
+      <tr>
+        <td>A wolf in sheep's clothing</td>
+        <td>A dangerious person pretending harmless</td>
+        <td>
+          Charles Shobhraj is a wolf in sheep's clothing for general public.
+        </td>
+      </tr>
+      <tr>
+        <td>ABC</td>
+        <td>Basic knowledge</td>
+        <td>He doesn't know ABC of Physics.</td>
+      </tr>
+      <tr>
+        <td>Above board</td>
+        <td>Fair and Honest</td>
+        <td>
+          He is a straightforward man. His financial dealing are above board.
+        </td>
+      </tr>
+      <tr>
+        <td>Again and again</td>
+        <td>Repeatedly</td>
+        <td>One who tries again and again surely gets success.</td>
+      </tr>
+      <tr>
+        <td>All and sundry</td>
+        <td>Without making any distinction</td>
+        <td>
+          He invited all and sundry in the marriage party of his younder
+          brother.
+        </td>
+      </tr>
+      <tr>
+        <td>All in all</td>
+        <td>Whole sole, most important</td>
+        <td>The Forest Minister is all in all of our department.</td>
+      </tr>
+      <tr>
+        <td>Alpha and omega</td>
+        <td>
+          First and last letters of the Greek alphabet, mean beginning and end
+        </td>
+        <td>
+          the alpha and omega of British policy was to keep the Indians divided.
+        </td>
+      </tr>
+      <tr>
+        <td>An eye wash</td>
+        <td>A pretence</td>
+        <td>
+          He does nothing without self-interest, all this excuses are but an eys
+          wash.
+        </td>
+      </tr>
+      <tr>
+        <td>An iron hand</td>
+        <td>By force</td>
+        <td>Indira Gandhi put down the opposition with an iron hand.</td>
+      </tr>
+      <tr>
+        <td>At sixes and seven</td>
+        <td>Persons who are having different opinions</td>
+        <td>Economists are at sixes and seven on the policy of rationing.</td>
+      </tr>
+      <tr>
+        <td>Back and call</td>
+        <td>At the serivice</td>
+        <td>Don't worry I am at your back and call</td>
+      </tr>
+      <tr>
+        <td>Bag and baggage</td>
+        <td>With all goods</td>
+        <td>He returned to this village with bag and baggage.</td>
+      </tr>
+      <tr>
+        <td>Between Scylla and Charybdis</td>
+        <td>Choice between two unpleasant alternatives</td>
+        <td>
+          Going Jaipur or staying back at Delhi was like a choice between Scylla
+          and Charybdis.
+        </td>
+      </tr>
+      <tr>
+        <td>Between the cup and the lip</td>
+        <td>On the point of achievement</td>
+        <td>
+          untill I got ths appointment letter in hand, I was not sure of the
+          posting as there are many a slip between the cup and the lip.
+        </td>
+      </tr>
+      <tr>
+        <td>Black and white</td>
+        <td>In writing</td>
+        <td>it is always better to get every thing in black and white.</td>
+      </tr>
+      <tr>
+        <td>Blow hot and cold</td>
+        <td>
+          Having no stand, shows favour at one time and unfavour at another
+        </td>
+        <td>
+          He can't be relied upon as he blows hot and cold on this matter.
+        </td>
+      </tr>
+      <tr>
+        <td>Body and soul</td>
+        <td>Entirely</td>
+        <td>She devoted body and soul to win the medal.</td>
+      </tr>
+      <tr>
+        <td>By fits and starts</td>
+        <td>irregularly</td>
+        <td>Work done by fits and starts never gets completed in time.</td>
+      </tr>
+      <tr>
+        <td>By hook or by crook</td>
+        <td>By any means</td>
+        <td>I want to get this licence by hook or by crook.</td>
+      </tr>
+      <tr>
+        <td>by leaps and bound</td>
+        <td>Speedily</td>
+        <td>The population is increasing by leaps and bounds.</td>
+      </tr>
+      <tr>
+        <td>Call a spade-a-spade</td>
+        <td>Straight talks</td>
+        <td>He believes in calling a spade-a-spade.</td>
+      </tr>
+      <tr>
+        <td>Cats and dogs</td>
+        <td>Heavy Rain</td>
+        <td>It has been raining cats and dogs for the last three hours.</td>
+      </tr>
+      <tr>
+        <td>Cock and bull story</td>
+        <td>Untrue story</td>
+        <td>All his excuses seems a cock and bull story.</td>
+      </tr>
+      <tr>
+        <td>Confusion worse confounded</td>
+        <td>be in further worse position</td>
+        <td>
+          Such demonstrations and communal speeches in present situation make
+          confusion worse confounded.
+        </td>
+      </tr>
+      <tr>
+        <td>Cut and dried</td>
+        <td>Readymade form</td>
+        <td>There is not cut and dried method of English Speaking.</td>
+      </tr>
+      <tr>
+        <td>Ever and anon</td>
+        <td>Now and then</td>
+        <td>She goes to temple ever and anon.</td>
+      </tr>
+      <tr>
+        <td>Fair and square</td>
+        <td>Honest</td>
+        <td>He is fair and square in this dealings.</td>
+      </tr>
+      <tr>
+        <td>Fair field and no favour</td>
+        <td>Equal opportunity to all</td>
+        <td>
+          All the staff want fair field and no favour in the matter of transfer.
+        </td>
+      </tr>
+      <tr>
+        <td>Far and wide</td>
+        <td>Everywhere</td>
+        <td>Many tourists come to see the Taj From far and wide.</td>
+      </tr>
+      <tr>
+        <td>Fire and brimstone</td>
+        <td>fearful penalties</td>
+        <td>
+          The USA has threatened Iraq with fire and brimstone if she refuses to
+          follow the resolutions of UNO.
+        </td>
+      </tr>
+      <tr>
+        <td>Fire and fury</td>
+        <td>extreme enthusiasm</td>
+        <td>The speech of Nepalese Prachand was full of fire and fury.</td>
+      </tr>
+      <tr>
+        <td>First and foremost</td>
+        <td>highest priority</td>
+        <td>
+          To be sincere and devoted is the foremost requirement of a good
+          employee..
+        </td>
+      </tr>
+      <tr>
+        <td>Fishy</td>
+        <td>doubtful</td>
+        <td>There seems to be something fishy going on.</td>
+      </tr>
+      <tr>
+        <td>Free and easy</td>
+        <td>natural and simple</td>
+        <td>The principal found his arguments free and easy</td>
+      </tr>
+      <tr>
+        <td>Gall and wormwood</td>
+        <td>source of irritation</td>
+        <td>Her remarks about his father were gall and wormwood to him.</td>
+      </tr>
+      <tr>
+        <td>Gird up the loin</td>
+        <td>to be ready</td>
+        <td>
+          We should gird up the loin to fight the poverty and menace of dowry.
+        </td>
+      </tr>
+      <tr>
+        <td>Goods and chattels</td>
+        <td>belongings of home</td>
+        <td>On transfer he brought all goods and chattels by road.</td>
+      </tr>
+      <tr>
+        <td>Hand and gloves</td>
+        <td>very intimate friends</td>
+        <td>Ram and Rahim are hand and gloves to each other.</td>
+      </tr>
+      <tr>
+        <td>Hard and fast</td>
+        <td>certain</td>
+        <td>
+          There are no hard and fast rules to sanction the loan in the banks.
+        </td>
+      </tr>
+      <tr>
+        <td>Haughty and naughty</td>
+        <td>arrogant and naughty</td>
+        <td>
+          The haughty and naughty attitude of the president is not liked by any
+          memeber of the society.
+        </td>
+      </tr>
+      <tr>
+        <td>Heart and soul</td>
+        <td>with full devotion</td>
+        <td>
+          He threw himself heart and soul in preparation to pass the
+          examination.
+        </td>
+      </tr>
+      <tr>
+        <td>Herculean task</td>
+        <td>a tedious job</td>
+        <td>Getting selected in IAS is a herculean task for everybody.</td>
+      </tr>
+      <tr>
+        <td>Hit below the belt</td>
+        <td>contrary to principles of fairness</td>
+        <td>
+          By making his private secretes public he hit him below the belt.
+        </td>
+      </tr>
+      <tr>
+        <td>Hither and thither</td>
+        <td>here and there</td>
+        <td>He is in the habit of putting his goods hither and thither.</td>
+      </tr>
+      <tr>
+        <td>Hole and corner policy</td>
+        <td>a secret policy for an evil purpose</td>
+        <td>
+          The officer adopted hole and corner policy to get his PA transferred.
+        </td>
+      </tr>
+      <tr>
+        <td>Hue and cry</td>
+        <td>great noise</td>
+        <td>
+          A lot of hue and cry was raised in Parliament against this bill.
+        </td>
+      </tr>
+      <tr>
+        <td>Ins and outs</td>
+        <td>Full details</td>
+        <td>
+          Before starting any new business you must know all ins and outs of it.
+        </td>
+      </tr>
+      <tr>
+        <td>Intents and purposes</td>
+        <td>Practically</td>
+        <td>
+          My wife is the incharge of the house for all intents and purposes.
+        </td>
+      </tr>
+      <tr>
+        <td>Kith and kin</td>
+        <td>Bloody relatives</td>
+        <td>All kith and kin were invited in the marriage of his son.</td>
+      </tr>
+      <tr>
+        <td>Latin and Greek</td>
+        <td>unable to understand</td>
+        <td>His speech in English was Latin and Greek to the rural folk.</td>
+      </tr>
+      <tr>
+        <td>Law and equity</td>
+        <td>legal and moral justice</td>
+        <td>
+          Law and equity demands that the reservation should be based on
+          economic parameters.
+        </td>
+      </tr>
+      <tr>
+        <td>Leave no stone unturned</td>
+        <td>make all possible efforts</td>
+        <td>I shall leave no stone unturned to get the promotion.</td>
+      </tr>
+      <tr>
+        <td>Length and breadth</td>
+        <td>all over</td>
+        <td>
+          Anti-English agitation spread through the length and breadth of the
+          country.
+        </td>
+      </tr>
+      <tr>
+        <td>Life and soul</td>
+        <td>main support</td>
+        <td>Sonia Gandhi is the life and soul of Congress (I).</td>
+      </tr>
+      <tr>
+        <td>Like a fish out of water</td>
+        <td>in every difficult and unsuitable situation</td>
+        <td>
+          Ram was given an unremunerative post. He is feeling like a fish out of
+          water.
+        </td>
+      </tr>
+      <tr>
+        <td>Loaves and fish</td>
+        <td>material interests</td>
+        <td>
+          Now-a-days Government servants are concerned with the loaves and fish
+          of the office than to solve the problems of common public.
+        </td>
+      </tr>
+      <tr>
+        <td>Lock and key</td>
+        <td>in safe place</td>
+        <td>He keeps jewellery under lock and key.</td>
+      </tr>
+      <tr>
+        <td>Might and main</td>
+        <td>with all enthusiasm</td>
+        <td>
+          If you study with might and main you will positively secure the
+          success.
+        </td>
+      </tr>
+      <tr>
+        <td>Milk and water</td>
+        <td>weak</td>
+        <td>
+          The foreign policy of India is nothing more than a milk and water
+          policy.
+        </td>
+      </tr>
+      <tr>
+        <td>Neck and crop</td>
+        <td>completely</td>
+        <td>The Pak army ruined the border village neck and crop.</td>
+      </tr>
+      <tr>
+        <td>Need of the hour</td>
+        <td>necessity of time</td>
+        <td>
+          Providing full security for the residents of border area is the need
+          of hour.
+        </td>
+      </tr>
+      <tr>
+        <td>Nook and corner</td>
+        <td>everywhere</td>
+        <td>I searched her in every nook and corner.</td>
+      </tr>
+      <tr>
+        <td>Not born yesterday</td>
+        <td>worldly wise</td>
+        <td>You can't fool me as I was not born yesterday.</td>
+      </tr>
+      <tr>
+        <td>Now and then</td>
+        <td>occasionally</td>
+        <td>I visit church now and then</td>
+      </tr>
+      <tr>
+        <td>Null and void</td>
+        <td>of no use, without force of application</td>
+        <td>
+          The law passed by legislature was declared null and void by the
+          Supreme Court.
+        </td>
+      </tr>
+      <tr>
+        <td>Odds and ends</td>
+        <td>remaining goods</td>
+        <td>
+          Excepts odds and ends, all the items have since been arranged in
+          order.
+        </td>
+      </tr>
+      <tr>
+        <td>Often and often</td>
+        <td>frequently</td>
+        <td>She visits her parents often and often.</td>
+      </tr>
+      <tr>
+        <td>Once and again</td>
+        <td>Repeatedly</td>
+        <td>
+          I have told you once and again that I have no money to purchase the
+          car at the moments
+        </td>
+      </tr>
+      <tr>
+        <td>Open and above board</td>
+        <td>very clear, transparent</td>
+        <td>
+          He believes in open and above board discussion on every point before
+          arriving at a conclusion.
+        </td>
+      </tr>
+      <tr>
+        <td>Out of gear</td>
+        <td>In disorder</td>
+        <td>
+          The strike of employees always put the government machinery out of
+          gear.
+        </td>
+      </tr>
+      <tr>
+        <td>Over and above</td>
+        <td>besides</td>
+        <td>I paid him rupees ten thousand over and above what he demanded.</td>
+      </tr>
+      <tr>
+        <td>Part and parcel</td>
+        <td>being an important part of</td>
+        <td>
+          Each employee should feel himself part and parcel of the business
+          enterprises.
+        </td>
+      </tr>
+      <tr>
+        <td>Pell mell</td>
+        <td>Putting one upon the other, in confusion</td>
+        <td>
+          He was such a hurry that he put all the articles pell mell and closed
+          the room.
+        </td>
+      </tr>
+      <tr>
+        <td>Pick and choose</td>
+        <td>To choose selectively as per wish</td>
+        <td>
+          The management adopted pick and choose policy in the promotions from
+          clerical to assistant cadre.
+        </td>
+      </tr>
+      <tr>
+        <td>Pins and needles</td>
+        <td>small items</td>
+        <td>
+          It is unwise to use swords and scissors where pins and needles can do.
+        </td>
+      </tr>
+      <tr>
+        <td>Pros and cons</td>
+        <td>Merits and demerits</td>
+        <td>
+          Before signing this agreement you must understand all pros and cons
+          well.
+        </td>
+      </tr>
+      <tr>
+        <td>Rain or shine</td>
+        <td>favourable or unfavouable circumstances</td>
+        <td>Rain or shine, I will continue to support her on this topic.</td>
+      </tr>
+      <tr>
+        <td>Rank and file</td>
+        <td>everyone without discrimination</td>
+        <td>
+          For the actual prosperity of the nation, the economic conditions of
+          rank and file should be improved.
+        </td>
+      </tr>
+      <tr>
+        <td>Rank and ruin</td>
+        <td>complete destructions</td>
+        <td>
+          The present drought has put the farmers at the verge of rank and ruin.
+        </td>
+      </tr>
+      <tr>
+        <td>Rhyme and reason</td>
+        <td>rational cause</td>
+        <td>He resigned from the service without any ryhme or reason.</td>
+      </tr>
+      <tr>
+        <td>Right and left</td>
+        <td>in all ways</td>
+        <td>The robbers looted the village right and left and fled away.</td>
+      </tr>
+      <tr>
+        <td>Root and branch</td>
+        <td>complete</td>
+        <td>
+          Poverty amount the public is the root and branch of all the crimes.
+        </td>
+      </tr>
+      <tr>
+        <td>Safe and sound</td>
+        <td>Quite well</td>
+        <td>She reached there safe and sound.</td>
+      </tr>
+      <tr>
+        <td>Speck and span</td>
+        <td>Neat and smart</td>
+        <td>Pt. JL Nehru was always speak and span in his drassing sysle.</td>
+      </tr>
+      <tr>
+        <td>Stuff and nonsence</td>
+        <td>worthless</td>
+        <td>The judge found all t his arguments stuff and nonsense.</td>
+      </tr>
+      <tr>
+        <td>Sum and substance</td>
+        <td>the actual theme</td>
+        <td>
+          The sum and substance of the paragraph must be reflected in a good
+          precis.
+        </td>
+      </tr>
+      <tr>
+        <td>The die is cast</td>
+        <td>decided finally</td>
+        <td>The die is cast there is not point of discussing over it now.</td>
+      </tr>
+      <tr>
+        <td>the last nail in the coffin</td>
+        <td>The last action which resulted in the complete end of something</td>
+        <td>
+          Delhi's incident of serial blasts was the last nail in the coffin of
+          Indian Mujahideen.
+        </td>
+      </tr>
+      <tr>
+        <td>Thick and thin</td>
+        <td>in all circumstances</td>
+        <td>I shall support you through thick and thin.</td>
+      </tr>
+      <tr>
+        <td>Through fire and water</td>
+        <td>in all sort of difficulties</td>
+        <td>He can go through fire and water to achieve his goal.</td>
+      </tr>
+      <tr>
+        <td>Time and tide</td>
+        <td>course of time</td>
+        <td>Time and tide waits for none.</td>
+      </tr>
+      <tr>
+        <td>To and fro</td>
+        <td>going and coming</td>
+        <td>
+          She went to and fro jaipur to check on the health of her parents.
+        </td>
+      </tr>
+      <tr>
+        <td>To check by jowl</td>
+        <td>very near to each other</td>
+        <td>
+          As the space was short, so he keptall the articles check by jowl.
+        </td>
+      </tr>
+      <tr>
+        <td>To move heaven and earth</td>
+        <td>to make all possible efforts</td>
+        <td>
+          Mahendra Rawat move heaven and earth to get success in MAT exams.
+        </td>
+      </tr>
+      <tr>
+        <td>To play ducks and drakes</td>
+        <td>to waste money</td>
+        <td>he is playing ducks and drakes with the parental money.</td>
+      </tr>
+      <tr>
+        <td>Toil and moil</td>
+        <td>hard labour</td>
+        <td>It require too much of toil and moil to secure first position.</td>
+      </tr>
+      <tr>
+        <td>Tomm Dick and Harry</td>
+        <td>everyone</td>
+        <td>
+          Every Tom, Dick and Harry knows that sachin is the greatest cricketer.
+        </td>
+      </tr>
+      <tr>
+        <td>Tooth and nail</td>
+        <td>With all force</td>
+        <td>He force tooth and nail for abolition of reservation policy.</td>
+      </tr>
+      <tr>
+        <td>Ups and downs</td>
+        <td>prospertiy and adversity</td>
+        <td>
+          There are ups and downs in every business, so one must not lost heart.
+        </td>
+      </tr>
+      <tr>
+        <td>Warp and woof</td>
+        <td>essential part of a thing</td>
+        <td>Blood and bones are warp and woof of human body.</td>
+      </tr>
+      <tr>
+        <td>Watch and ward</td>
+        <td>careful guard</td>
+        <td>
+          At least three guards are required to have perfect watch and ward of
+          the building
+        </td>
+      </tr>
+      <tr>
+        <td>Weal and woe</td>
+        <td>Propserity and adversity</td>
+        <td>I will adide by you in all weal and woe and never let you down.</td>
+      </tr>
+      <tr>
+        <td>Whips and spur</td>
+        <td>with grestest hurry</td>
+        <td>
+          he completed the project whips and spur, and never let you down.
+        </td>
+      </tr>
+      <tr>
+        <td>Why and wherefore</td>
+        <td>the basic roll seaon</td>
+        <td>
+          Please tell me the why and wherefore of your decision to take
+          voluntary retirement.
+        </td>
+      </tr>
+      <tr>
+        <td>Willy-nilly</td>
+        <td>wish or not wish</td>
+        <td>He was willy-nilly about apprearing in CAT exam.</td>
+      </tr>
+    </table>
+
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+    </script>
+  </body>
+</html>
