@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ROMAN</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      #myInput {
+        background-image: url("icons8-search-24.png");
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ddd;
+        font-size: 18px;
+      }
+
+      #myTable th,
+      #myTable td {
+        text-align: left;
+        padding: 12px;
+      }
+
+      #myTable tr {
+        border-bottom: 1px solid #ddd;
+      }
+
+      #myTable tr.header,
+      #myTable tr:hover {
+        background-color: #f1f1f1;
+      }
+      
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .previous {
+        background-color: #04aa6d;
+        color: black;
+      }
+      body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="previous">&laquo; Previous</a>
+    <button onclick="myFunction()">Dark Mode</button>
+    <h1>ROMAN NUMERALS</h1>
+
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Type in English";
+      title="Type in a name"
+    />
+
+    <table id="myTable">
+      <tr class="header">
+        <th style="width: 60%">ENGLISH</th>
+        <th style="width: 40%">ROMAN</th>
+        
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>I</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>II</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>III</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>IV</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>V</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>VI</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>VII</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>VIII</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>IX</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>X</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>XI</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>XII</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>XIII</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>XIV</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>XV</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>XVI</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>XVII</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>XVIII</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>XIX</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>XX</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>XXI</td>
+    </tr>
+    <tr>
+        <td>22</td>
+        <td>XXII</td>
+    </tr>
+    <tr>
+        <td>23</td>
+        <td>XXIII</td>
+    </tr>
+    <tr>
+        <td>24</td>
+        <td>XXIV</td>
+    </tr>
+    <tr>
+        <td>30</td>
+        <td>XXX</td>
+    </tr>
+    <tr>
+        <td>40</td>
+        <td>XL</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>L</td>
+    </tr>
+    <tr>
+        <td>60</td>
+        <td>LX</td>
+    </tr>
+    <tr>
+        <td>70</td>
+        <td>LXX</td>
+    </tr>
+    <tr>
+        <td>80</td>
+        <td>LXXX</td>
+    </tr>
+    <tr>
+        <td>90</td>
+        <td>XC</td>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td>101</td>
+        <td>CI</td>
+    </tr>
+    <tr>
+        <td>102</td>
+        <td>CII</td>
+    </tr>
+    <tr>
+        <td>200</td>
+        <td>CC</td>
+    </tr>
+    <tr>
+        <td>300</td>
+        <td>CCC</td>
+    </tr>
+    <tr>
+        <td>400</td>
+        <td>CD</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td>600</td>
+        <td>DC</td>
+    </tr>
+    <tr>
+        <td>700</td>
+        <td>DCC</td>
+    </tr>
+    <tr>
+        <td>800</td>
+        <td>DCCC</td>
+    </tr>
+    <tr>
+        <td>900</td>
+        <td>CM</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td>1100</td>
+        <td>MC</td>
+    </tr>
+    <tr>
+        <td>1200</td>
+        <td>MCC</td>
+    </tr>
+    <tr>
+        <td>1300</td>
+        <td>MCCC</td>
+    </tr>
+    <tr>
+        <td>1400</td>
+        <td>MCD</td>
+    </tr>
+    <tr>
+        <td>1500</td>
+        <td>MD</td>
+    </tr>
+    <tr>
+        <td>1001</td>
+        <td>MI</td>
+    </tr>
+    <tr>
+        <td>1002</td>
+        <td>MII</td>
+    </tr>
+    <tr>
+        <td>1003</td>
+        <td>MIII</td>
+    </tr>
+    <tr>
+        <td>1900</td>
+        <td>MCM</td>
+    </tr>
+    <tr>
+        <td>2000</td>
+        <td>MM</td>
+    </tr>
+    <tr>
+        <td>2001</td>
+        <td>MMI</td>
+    </tr>
+    <tr>
+        <td>2002</td>
+        <td>MMII</td>
+    </tr>
+    <tr>
+        <td>2100</td>
+        <td>MMC</td>
+    </tr>
+    <tr>
+        <td>3000</td>
+        <td>MMM</td>
+    </tr>
+    <tr>
+        <td>4000</td>
+        <td>MMMMor M V</td>
+    </tr>
+    <tr>
+        <td>5000</td>
+        <td>V</td>
+    </tr>
+
+          </table>
+
+    <script src="script.js" ></script>
+    
+  </body>
+</html>
