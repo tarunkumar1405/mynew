@@ -6,20 +6,27 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>TARUN KUMAR</title>
     <style>
-      .top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  font-size: 20px;
-  color: blue;
-  font-weight: bold;
-
-}
+    body{
+      background-color: whitesmoke;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
 .container {
   position: relative;
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: white;
-  overflow: hidden;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
 }
     </style>
   </head>
@@ -39,8 +46,12 @@
     
         <span style="font-size:32px;cursor:pointer" onclick="openNav()">&#9776; OPEN</span>
         <div class="container">
-        <img src="brown white elegant welcome to our shop facebook post.png" alt="wELCOME" width="100%" height="auto">
-        <div class="top-left">LANGUAGES ARE LIKE A CONVEYOR BELT.</div>
+        <img src="brown white elegant welcome to our shop facebook post.png" alt="WELCOME" width="100%">
+        <div class="content">
+          <h1>HI FRIENDS</h1>
+          <p style="text-decoration: overline;">"THIS WEBSITE HAS A PURPOSE TO SPREAD THE KNOWLEDGE"</p>
+        </div>
+       
       </div>
     <script src="nav.js"></script>
   </body>
