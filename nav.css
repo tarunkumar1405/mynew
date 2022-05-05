@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
   }
   
   .overlay {
@@ -9,8 +9,8 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: YELLOW;
-    background-color: YELLOW;
+    background-color: yellow;
+    background-color: yellow;
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -26,14 +26,14 @@ body {
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
-    color: BLACK;
+    font-size: 30px;
+    color: blue;
     display: block;
     transition: 0.3s;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: red;
   }
   
   .overlay .closebtn {
