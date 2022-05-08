@@ -1,18 +1,18 @@
 body {
-    font-family: 'Macondo', cursive;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #F0F2F5;
       }
   
   
   .overlay {
-    height: 100%;
-    width: 0;
+    height:0%;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: yellow;
-    background-color: yellow;
+    
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -21,9 +21,7 @@ body {
     text-align: center;
     color: black;
     font-weight: bold;
-    text-decoration: underline;
-    text-shadow: #F0F2F5;
-  }
+     }
   .overlay-content {
     position: relative;
     top: 25%;
@@ -33,16 +31,17 @@ body {
   }
   
   .overlay a {
-    padding: 8px;
+    padding: 5px;
     text-decoration: none;
-    font-size: 30px;
-    color: blue;
+    font-size: 28px;
+    font-weight: normal;
+    color: red;
     display: block;
-    transition: 0.3s;
+    transition: 0.2s;
   }
   
   .overlay a:hover, .overlay a:focus {
-    color: red;
+    color: black;
   }
   
   .overlay .closebtn {
