@@ -1,6 +1,8 @@
 body {
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-  }
+    font-family: 'Macondo', cursive;
+    background-color: #F0F2F5;
+      }
+  
   
   .overlay {
     height: 100%;
@@ -14,7 +16,14 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
   }
-  
+  #text {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: #F0F2F5;
+  }
   .overlay-content {
     position: relative;
     top: 25%;
